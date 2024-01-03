@@ -46,7 +46,7 @@ make pack target=darwin-amd64
 make pack target=darwin-arm64
 ```
 
-###安装
+### 安装
 * 解压压缩包
 
 ![解压安装包](./doc/img/pack.png)
@@ -66,13 +66,14 @@ make pack target=darwin-arm64
 ├── file #文件目录
 ├── config #配置
 │   └── config.json #配置文件
-├── init.sh 				#初始化脚本
+├── init.sh 			#初始化脚本
 ├── restart.sh			#重启脚本
-├── speedfs			#speedfs二级制
-├── start.sh				#启动脚本
+├── speedfs			    #speedfs二级制
+├── start.sh			#启动脚本
 └── stop.sh				#停止脚本
 ```
 * 修改配置
+
 配置文件为json格式config/config.json配置项说明
 ```shell
 {
@@ -117,7 +118,7 @@ make pack target=darwin-arm64
 ./stop.sh    #停止服务
 ```
 ## 接口文档
-### 上传
+### 上传接口
 请求参数
 - **方法：** `POST`
 - **路径：** `/upload`
@@ -139,7 +140,7 @@ make pack target=darwin-arm64
 ```
 应用端可选择存文件路径,好处是文件迁移到其他ip的机器也不影响,坏处是下载的时候需要拼接ip端口
 
-### 下载
+### 下载接口
 请求参数
 - **方法：** `GET`
 - **路径：** `/{filepath}`
@@ -150,7 +151,7 @@ make pack target=darwin-arm64
 ```shell
 文件写入输出流
 ```
-### 删除
+### 删除接口
 请求参数
 - **方法：** `POST`
 - **路径：** `/delete`
