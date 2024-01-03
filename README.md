@@ -30,9 +30,11 @@ speedfs是一个轻量级高性能分布式文件存储系统。适合只需要�
 
 ## 安装部署
 安装包可通过release页面下载,也可以自行编译
-### 获取安装包
+### 安装包下载
 从release页面下载
+https://github.com/koihuang/speedfs/releases
 
+![安装包下载](./doc/img/releaser-pack.png)
 ### 自行编译
 默认当前机器平台编译
 ```shell
