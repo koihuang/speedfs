@@ -171,6 +171,7 @@ make pack target=darwin-arm64
 ```
 ## TODO
 - [ ] 权限验证
+- [ ] 自动修复服务重启间隔期间的文件
 - [ ] 客户端调用样例
 - [ ] 单元测试
 - [ ] docker
